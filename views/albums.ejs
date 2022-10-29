@@ -1,0 +1,8 @@
+<h1>Albums</h1>
+<ul>
+  <%each albums%>
+  <h2>{{ this.name }}</h2>
+  <img src="{{this.images.0.url}}" alt="image" />
+  <a class="buttons" href="/tracks/{{ this.id }}">View Tracks</a>
+  <%each %>
+</ul>
